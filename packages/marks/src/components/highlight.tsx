@@ -14,7 +14,7 @@ export interface LeafColorProps {
   className?: string;
 }
 
-export const Highlight = createYooptaMark<YooptaMarkProps<'highlight', LeafColorProps>>({
+export const CustomHighlight = createYooptaMark<YooptaMarkProps<'highlight', LeafColorProps>>({
   type: 'highlight',
   render: (props) => {
     const highlight = props.leaf?.highlight;
